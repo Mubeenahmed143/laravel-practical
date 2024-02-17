@@ -11,7 +11,15 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        Schema::create('Students', function (Blueprint $table) {
+            $table->id();
+            $table->string("std_name",100);
+            $table->string("std_class",100);
+            $table->string("std_faculty",100);
+            $table->string("std_email", 100);
+            $table->string("std_password",100);
+            $table->timestamps();
+        });
     }
 
     /**

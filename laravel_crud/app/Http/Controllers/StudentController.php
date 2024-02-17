@@ -9,11 +9,11 @@ class StudentController extends Controller
     Public function submit(Request $request){
         
         $request->validate([
-          'name'=> 'required',
-          'class'=> 'required',
-          'faculty'=> 'required',
-    'email'=> 'required | email',
-    'password'=> 'required',
+          'std_name'=> 'required',
+          'std_class'=> 'required',
+          'std_faculty'=> 'required',
+    'std_email'=> 'required | email',
+    'std_password'=> 'required',
     
         ])  ;
         $table = new stutent();
